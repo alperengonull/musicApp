@@ -9,7 +9,7 @@ const SearchBar = (props) => {
     
   return (
     <View style={styles.container}>
-    <TextInput style={styles.input}  placeholder="Ara..." />
+    <TextInput style={styles.input} onChangeText={props.searchProperty}  placeholder="Ara..." />
 </View>
   )
 }
